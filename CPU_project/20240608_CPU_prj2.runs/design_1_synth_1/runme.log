@@ -1,0 +1,1333 @@
+
+*** Running vivado
+    with args -log design_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1.tcl -notrace
+WARNING: [BD 41-2576] File 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/design_1_sim_netlist.vhdl' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/design_1_sim_netlist.v' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/design_1_stub.vhdl' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/design_1_stub.v' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/design_1.dcp' referenced by design 'design_1' could not be found.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.srcs/sources_1/bd/design_1/design_1.bd
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.srcs/sources_1/bd/design_1/design_1.bd
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10352
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1106.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_ahblite_axi_bridge_0_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ahblite_axi_bridge_0_0/synth/design_1_ahblite_axi_bridge_0_0.vhd:113]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_INSTANCE bound to: design_1_ahblite_axi_bridge_0_0 - type: string 
+	Parameter C_M_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_M_AXI_NON_SECURE bound to: 1 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AHB_AXI_TIMEOUT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'ahblite_axi_bridge' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:4257' bound to instance 'U0' of component 'ahblite_axi_bridge' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ahblite_axi_bridge_0_0/synth/design_1_ahblite_axi_bridge_0_0.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'ahblite_axi_bridge' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:4353]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_INSTANCE bound to: design_1_ahblite_axi_bridge_0_0 - type: string 
+	Parameter C_M_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AHB_AXI_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_M_AXI_NON_SECURE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ahblite_axi_control' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3648]
+INFO: [Synth 8-256] done synthesizing module 'ahblite_axi_control' (1#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3648]
+INFO: [Synth 8-638] synthesizing module 'ahb_if' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:2506]
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_NON_SECURE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ahb_if' (2#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:2506]
+INFO: [Synth 8-638] synthesizing module 'ahb_data_counter' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3367]
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'counter_f' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:328]
+	Parameter C_NUM_BITS bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (3#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-256] done synthesizing module 'ahb_data_counter' (4#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3367]
+INFO: [Synth 8-638] synthesizing module 'axi_wchannel' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:910]
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_wchannel' (5#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:910]
+INFO: [Synth 8-638] synthesizing module 'axi_rchannel' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:1931]
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_rchannel' (6#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:1931]
+INFO: [Synth 8-638] synthesizing module 'time_out' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:534]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_AHB_AXI_TIMEOUT bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'time_out' (7#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:534]
+INFO: [Synth 8-256] done synthesizing module 'ahblite_axi_bridge' (8#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/4b2a/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:4353]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ahblite_axi_bridge_0_0' (9#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ahblite_axi_bridge_0_0/synth/design_1_ahblite_axi_bridge_0_0.vhd:113]
+WARNING: [Synth 8-7071] port 's_ahb_hready_out' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 's_ahb_hrdata' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 's_ahb_hresp' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'design_1_ahblite_axi_bridge_0_0' is unconnected for instance 'ahblite_axi_bridge_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-7023] instance 'ahblite_axi_bridge_0' of module 'design_1_ahblite_axi_bridge_0_0' has 49 connections declared, but only 22 given [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:59]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (10#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (11#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (12#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' (13#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (14#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_REVISION bound to: (null) - type: string 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_BSCANID bound to: 76547328 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_ADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MDM' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:12616' bound to instance 'U0' of component 'MDM' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:1656]
+INFO: [Synth 8-638] synthesizing module 'MDM' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:14299]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_REVISION bound to: (null) - type: string 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_BSCANID bound to: 76547328 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_ADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:321' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:15905]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:345]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:355]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (15#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:345]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-3491] module 'MB_LUT1' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1469' bound to instance 'LUT1_I' of component 'MB_LUT1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:15923]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_LUT1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1483]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 2'b10 
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1505]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_LUT1' (16#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1483]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_BUFG' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:383' bound to instance 'BUFG_DRCK' of component 'MB_BUFG' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:16391]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:396]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFG' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:406]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (17#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:396]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_REG_NUM_CE bound to: 4 - type: integer 
+	Parameter C_REG_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MDM_Core' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:5734' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:16489]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:6971]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_REG_NUM_CE bound to: 4 - type: integer 
+	Parameter C_REG_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'config_scan_reset_i' of component 'xil_scan_reset_control' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7654]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_xil_scan_reset_control' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_xil_scan_reset_control' (18#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:306]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'sel_n_reset_i' of component 'xil_scan_reset_control' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7664]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'shift_n_reset_i' of component 'xil_scan_reset_control' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7674]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3017' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:10365]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3290]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'config_with_scan_reset_i' of component 'xil_scan_reset_control' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3599]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'sel_with_scan_reset_i' of component 'xil_scan_reset_control' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3607]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDC_1' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:682' bound to instance 'FDC_I' of component 'MB_FDC_1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3664]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:698]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:719]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (19#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:698]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:741' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3674]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:758]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:781]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (20#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:758]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000101100111 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_1' of component 'MB_SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3868]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000101100111 
+	Parameter INIT bound to: 16'b0000000101100111 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E' (21#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100001010000111 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_2' of component 'MB_SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3886]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100001010000111 
+	Parameter INIT bound to: 16'b0100001010000111 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized0' (21#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100010001000011 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_ID_1' of component 'MB_SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3957]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized1' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100010001000011 
+	Parameter INIT bound to: 16'b0100010001000011 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized1' (21#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0101100001001101 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_ID_2' of component 'MB_SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3975]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized2' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0101100001001101 
+	Parameter INIT bound to: 16'b0101100001001101 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized2' (21#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (22#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3290]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (23#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:6971]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (24#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:14299]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (25#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
+	Parameter C_SCO bound to: 0 - type: integer 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_IRQ bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_DEBUG bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_CLK bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_TRACE_CLK bound to: 2 - type: integer 
+	Parameter C_FAULT_TOLERANT bound to: 0 - type: integer 
+	Parameter C_ECC_USE_CE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_SLAVE bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_MASTER bound to: 0 - type: integer 
+	Parameter C_ENDIANNESS bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTR_SIZE bound to: 32 - type: integer 
+	Parameter C_IADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_PIADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTANCE bound to: design_1_microblaze_0_0 - type: string 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_AREA_OPTIMIZED bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_DP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_D_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_M_AXI_IP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_I_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_D_LMB bound to: 1 - type: integer 
+	Parameter C_D_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_D_AXI bound to: 1 - type: integer 
+	Parameter C_I_LMB bound to: 1 - type: integer 
+	Parameter C_I_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_I_AXI bound to: 0 - type: integer 
+	Parameter G_TEMPLATE_LIST bound to: 0 - type: integer 
+	Parameter C_USE_MSR_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_PCMP_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BARREL bound to: 0 - type: integer 
+	Parameter C_USE_DIV bound to: 0 - type: integer 
+	Parameter C_USE_HW_MUL bound to: 0 - type: integer 
+	Parameter C_USE_FPU bound to: 0 - type: integer 
+	Parameter C_USE_REORDER_INSTR bound to: 1 - type: integer 
+	Parameter C_UNALIGNED_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_ILL_OPCODE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_DIV_ZERO_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FPU_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FSL_LINKS bound to: 0 - type: integer 
+	Parameter C_USE_EXTENDED_FSL_INSTR bound to: 0 - type: integer 
+	Parameter C_FSL_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_USE_STACK_PROTECTION bound to: 0 - type: integer 
+	Parameter C_IMPRECISE_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_USE_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_EXT_BRK bound to: 0 - type: integer 
+	Parameter C_USE_EXT_NM_BRK bound to: 0 - type: integer 
+	Parameter C_USE_NON_SECURE bound to: 0 - type: integer 
+	Parameter C_USE_MMU bound to: 0 - type: integer 
+	Parameter C_MMU_DTLB_SIZE bound to: 4 - type: integer 
+	Parameter C_MMU_ITLB_SIZE bound to: 2 - type: integer 
+	Parameter C_MMU_TLB_ACCESS bound to: 3 - type: integer 
+	Parameter C_MMU_ZONES bound to: 16 - type: integer 
+	Parameter C_MMU_PRIVILEGED_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BRANCH_TARGET_CACHE bound to: 0 - type: integer 
+	Parameter C_BRANCH_TARGET_CACHE_SIZE bound to: 0 - type: integer 
+	Parameter C_PC_WIDTH bound to: 32 - type: integer 
+	Parameter C_PVR bound to: 0 - type: integer 
+	Parameter C_PVR_USER1 bound to: 8'b00000000 
+	Parameter C_PVR_USER2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_DYNAMIC_BUS_SIZING bound to: 0 - type: integer 
+	Parameter C_RESET_MSR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_OPCODE_0x0_ILLEGAL bound to: 0 - type: integer 
+	Parameter C_DEBUG_ENABLED bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_PC_BRK bound to: 1 - type: integer 
+	Parameter C_NUMBER_OF_RD_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_WR_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_DEBUG_EVENT_COUNTERS bound to: 5 - type: integer 
+	Parameter C_DEBUG_LATENCY_COUNTERS bound to: 1 - type: integer 
+	Parameter C_DEBUG_COUNTER_WIDTH bound to: 32 - type: integer 
+	Parameter C_DEBUG_TRACE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DEBUG_EXTERNAL_TRACE bound to: 0 - type: integer 
+	Parameter C_DEBUG_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_DEBUG_PROFILE_SIZE bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_IS_EDGE bound to: 0 - type: integer 
+	Parameter C_EDGE_IS_POSITIVE bound to: 1 - type: integer 
+	Parameter C_ASYNC_INTERRUPT bound to: 1 - type: integer 
+	Parameter C_ASYNC_WAKEUP bound to: 3 - type: integer 
+	Parameter C_M0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ICACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_ICACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_ICACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_ICACHE_WR bound to: 1 - type: integer 
+	Parameter C_ADDR_TAG_BITS bound to: 17 - type: integer 
+	Parameter C_CACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_ICACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_ICACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_ICACHE_STREAMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_ICACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_IC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_IC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DCACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_DCACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_DCACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_DCACHE_WR bound to: 1 - type: integer 
+	Parameter C_DCACHE_ADDR_TAG bound to: 17 - type: integer 
+	Parameter C_DCACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DCACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_DCACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_DCACHE_USE_WRITEBACK bound to: 0 - type: integer 
+	Parameter C_DCACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_DCACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_DCACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_DC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/9285/hdl/microblaze_v11_0_vh_rfs.vhd:164117' bound to instance 'U0' of component 'MicroBlaze' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:810]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (77#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_AWADDR' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_AWPROT' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_AWVALID' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_WDATA' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_WSTRB' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_WVALID' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_BREADY' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_ARADDR' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_ARPROT' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_ARVALID' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7071] port 'M_AXI_DP_RREADY' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_0' has 52 connections declared, but only 40 given [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:101]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:172]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000001111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3134' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000001111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S_AXI_CTRL_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2527' bound to instance 'lmb_mux_I' of component 'lmb_mux' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3511]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2110' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2681]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (78#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (79#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (80#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (81#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:141]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'FDS' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847' bound to instance 'POR_FF_I' of component 'FDS' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:171]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (82#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (83#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (84#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:318]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:318]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000001111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3134' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (85#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (86#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:364]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:364]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 1 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: design_1_lmb_bram_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 2048 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 2 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     10.7492 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (95#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:389]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:389]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:389]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (96#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:172]
+WARNING: [Synth 8-7071] port 'DLMB_readdbus' of module 'microblaze_0_local_memory_imp_1K0VQXK' is unconnected for instance 'microblaze_0_local_memory' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:142]
+WARNING: [Synth 8-7071] port 'DLMB_wait' of module 'microblaze_0_local_memory_imp_1K0VQXK' is unconnected for instance 'microblaze_0_local_memory' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:142]
+WARNING: [Synth 8-7023] instance 'microblaze_0_local_memory' of module 'microblaze_0_local_memory_imp_1K0VQXK' has 21 connections declared, but only 19 given [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:142]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (97#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (98#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (99#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (100#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (101#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (102#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (103#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:162]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:162]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:162]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 7 given [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (104#1) [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/synth/design_1.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:28 . Memory (MB): peak = 1428.785 ; gain = 322.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1428.785 ; gain = 322.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1428.785 ; gain = 322.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.353 . Memory (MB): peak = 1428.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 600 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+Finished Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'microblaze_0/U0'
+Finished Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'microblaze_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'mdm_1/U0'
+INFO: [Timing 38-2] Deriving generated clocks [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc:50]
+Finished Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'mdm_1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'clk_wiz_1/inst'
+Finished Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'clk_wiz_1/inst'
+Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'clk_wiz_1/inst'
+WARNING: [Constraints 18-619] A clock with name 'diff_clock_rtl_clk_p' already exists, overwriting the previous clock with the same name. [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:56]
+Finished Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'clk_wiz_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'rst_clk_wiz_1_100M/U0'
+Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [d:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'rst_clk_wiz_1_100M/U0'
+Parsing XDC File [D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1465.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 394 instances were transformed.
+  FDC_1 => FDCE (inverted pins: C): 1 instance 
+  FDR => FDRE: 138 instances
+  FDRE_1 => FDRE (inverted pins: C): 1 instance 
+  FDS => FDSE: 3 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 96 instances
+  MULT_AND => LUT2: 1 instance 
+  MUXCY_L => MUXCY: 137 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1466.699 ; gain = 0.961
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1466.699 ; gain = 360.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1466.699 ; gain = 360.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0/U0. (constraint file  D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/dont_touch.xdc, line 38).
+Applied set_property KEEP_HIERARCHY = SOFT for mdm_1/U0. (constraint file  D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/dont_touch.xdc, line 47).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_1/inst. (constraint file  D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/dont_touch.xdc, line 52).
+Applied set_property KEEP_HIERARCHY = SOFT for rst_clk_wiz_1_100M/U0. (constraint file  D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/dont_touch.xdc, line 60).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ahblite_axi_bridge_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for reset. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1466.699 ; gain = 360.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ctl_sm_cs_reg' in module 'ahblite_axi_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ctl_idle |                          0000001 |                              000
+                ctl_addr |                          0000010 |                              001
+               ctl_write |                          0000100 |                              010
+               ctl_bresp |                          0001000 |                              101
+           ctl_bresp_err |                          0010000 |                              110
+                ctl_read |                          0100000 |                              011
+            ctl_read_err |                          1000000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctl_sm_cs_reg' using encoding 'one-hot' in module 'ahblite_axi_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:41 . Memory (MB): peak = 1466.699 ; gain = 360.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	             4096 Bit    Registers := 1     
+	               43 Bit    Registers := 3     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 33    
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 26    
+	                1 Bit    Registers := 335   
++---Muxes : 
+	   3 Input   43 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 12    
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 7     
+	   2 Input   15 Bit        Muxes := 10    
+	   3 Input   14 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 9     
+	   4 Input    8 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 8     
+	   3 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 18    
+	   2 Input    1 Bit        Muxes := 229   
+	   7 Input    1 Bit        Muxes := 18    
+	   5 Input    1 Bit        Muxes := 3     
+	  12 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:55 . Memory (MB): peak = 1466.699 ; gain = 360.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'microblaze_0/U0/Reset' to pin 'rst_clk_wiz_1_100M/U0/FDRE_inst/Q'
+WARNING: [Synth 8-565] redefining clock 'diff_clock_rtl_clk_p'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:01:00 . Memory (MB): peak = 1466.699 ; gain = 360.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:01:13 . Memory (MB): peak = 1466.699 ; gain = 360.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:01:14 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                                                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|MDM                | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[26]                                                                                               | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|MDM                | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[10]                                                                                               | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|MDM                | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[3]                                                                                                | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|blk_mem_gen_v8_4_4 | inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4] | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name         | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | PC_Buffer_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | ibuffer_reg[2]   | 43     | 43         | 43     | 0       | 0      | 0      | 0      | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BSCANE2    |     1|
+|2     |BUFG       |     3|
+|3     |LUT1       |    26|
+|4     |LUT2       |   123|
+|5     |LUT3       |   282|
+|6     |LUT4       |   201|
+|7     |LUT5       |   198|
+|8     |LUT6       |   469|
+|10    |MMCME2_ADV |     1|
+|11    |MULT_AND   |     1|
+|12    |MUXCY_L    |   135|
+|13    |MUXF7      |   108|
+|14    |RAM32M     |    16|
+|15    |RAMB36E1   |     2|
+|16    |SRL16      |     1|
+|17    |SRL16E     |   100|
+|18    |SRLC16E    |     8|
+|19    |XORCY      |    94|
+|20    |FDCE       |   274|
+|21    |FDC        |     1|
+|22    |FDPE       |     6|
+|23    |FDR        |    95|
+|24    |FDRE       |   714|
+|26    |FDS        |     1|
+|27    |FDSE       |    39|
+|28    |IBUFDS     |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 1475.973 ; gain = 369.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:12 . Memory (MB): peak = 1475.973 ; gain = 331.617
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:01:17 . Memory (MB): peak = 1475.973 ; gain = 369.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1475.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 537 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1477.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 234 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 38 instances
+  FDC_1 => FDCE (inverted pins: C): 1 instance 
+  FDR => FDRE: 95 instances
+  FDRE_1 => FDRE (inverted pins: C): 1 instance 
+  FDS => FDSE: 1 instance 
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  MULT_AND => LUT2: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  SRL16 => SRL16E: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+173 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:01:25 . Memory (MB): peak = 1477.793 ; gain = 371.352
+INFO: [Coretcl 2-1174] Renamed 726 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/design_1_synth_1/design_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_utilization_synth.rpt -pb design_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 13 17:23:18 2024...

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Aug 22 14:36:31 2024
+# Process ID: 14316
+# Current directory: D:/FPGA_RISC/20240608_CPU_prj2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10308 D:\FPGA_RISC\20240608_CPU_prj2\20240608_CPU_prj2.xpr
+# Log file: D:/FPGA_RISC/20240608_CPU_prj2/vivado.log
+# Journal file: D:/FPGA_RISC/20240608_CPU_prj2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1

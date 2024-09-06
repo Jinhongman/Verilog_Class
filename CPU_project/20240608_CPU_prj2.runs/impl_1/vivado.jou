@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 10 19:06:30 2024
+# Process ID: 25424
+# Current directory: D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/impl_1
+# Command line: vivado.exe -log RV32I_MCU.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RV32I_MCU.tcl -notrace
+# Log file: D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/impl_1/RV32I_MCU.vdi
+# Journal file: D:/FPGA_RISC/20240608_CPU_prj2/20240608_CPU_prj2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RV32I_MCU.tcl -notrace

@@ -1,0 +1,15 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Vivado/workspace/project_Final/project_Final.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/Button.v,1716534750,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/FIFO.v,,Button,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/FIFO.v,1716689917,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/FNDController.v,,FIFO;FIFO_control_unit;register_file,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/FNDController.v,1716687522,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/Timer.v,,BCDtoSEG;FNDController;clkDiv;counter;counter_dp;decoder_2x4;digitSplitter_time;mux,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/Timer.v,1716631358,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/new/controlUnit.v,,Timer;timecounter,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/stop_watch.v,1716625314,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/uart.v,,SWCounter;stop_watch,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/top.v,1716687720,verilog,,,,top,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/uart.v,1716713590,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/uart_fifo.v,,baudrate_generator;receiver;transmitter;uart,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/uart_fifo.v,1716689916,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/top.v,,uart_fifo,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/new/controlUnit.v,1716689914,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/new/dataUnit.v,,Contorll_Mode;Controll_StopWatch;Controll_Timer;controlUnit,,,,,,,,
+C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/new/dataUnit.v,1716689915,verilog,,C:/Vivado/workspace/project_Final/project_Final.srcs/sources_1/imports/new/stop_watch.v,,dataUnit;mux21,,,,,,,,

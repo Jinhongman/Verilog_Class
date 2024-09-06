@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jul 28 15:27:37 2024
+# Process ID: 23004
+# Current directory: C:/Vivado/workspace/project_Final/project_Final.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Vivado/workspace/project_Final/project_Final.runs/synth_1/top.vds
+# Journal file: C:/Vivado/workspace/project_Final/project_Final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
